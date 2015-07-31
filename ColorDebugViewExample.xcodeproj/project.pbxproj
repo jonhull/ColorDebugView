@@ -12,6 +12,12 @@
 		FC5FEFFA1B6ADF5300F059F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC5FEFF81B6ADF5300F059F5 /* Main.storyboard */; };
 		FC5FEFFC1B6ADF5300F059F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC5FEFFB1B6ADF5300F059F5 /* Assets.xcassets */; };
 		FC5FEFFF1B6ADF5300F059F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC5FEFFD1B6ADF5300F059F5 /* LaunchScreen.storyboard */; };
+		FC5FF00D1B6ADF7800F059F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5FF00C1B6ADF7800F059F5 /* AppDelegate.swift */; };
+		FC5FF00F1B6ADF7800F059F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5FF00E1B6ADF7800F059F5 /* ViewController.swift */; };
+		FC5FF0111B6ADF7800F059F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC5FF0101B6ADF7800F059F5 /* Assets.xcassets */; };
+		FC5FF0141B6ADF7900F059F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC5FF0121B6ADF7800F059F5 /* Main.storyboard */; };
+		FC5FF01B1B6ADFA500F059F5 /* ColorDebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5FF01A1B6ADFA500F059F5 /* ColorDebugView.swift */; };
+		FC5FF01C1B6AE72200F059F5 /* ColorDebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5FF01A1B6ADFA500F059F5 /* ColorDebugView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +28,24 @@
 		FC5FEFFB1B6ADF5300F059F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC5FEFFE1B6ADF5300F059F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC5FF0001B6ADF5300F059F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC5FF00A1B6ADF7800F059F5 /* OSX_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OSX_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC5FF00C1B6ADF7800F059F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FC5FF00E1B6ADF7800F059F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FC5FF0101B6ADF7800F059F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC5FF0131B6ADF7800F059F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC5FF0151B6ADF7900F059F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC5FF01A1B6ADFA500F059F5 /* ColorDebugView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorDebugView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FC5FEFEE1B6ADF5300F059F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC5FF0071B6ADF7800F059F5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,7 +58,9 @@
 		FC5FEFE81B6ADF5300F059F5 = {
 			isa = PBXGroup;
 			children = (
+				FC5FF0191B6ADF8600F059F5 /* ColorDebugView */,
 				FC5FEFF31B6ADF5300F059F5 /* ColorDebugViewExample */,
+				FC5FF00B1B6ADF7800F059F5 /* OSX_Example */,
 				FC5FEFF21B6ADF5300F059F5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				FC5FEFF11B6ADF5300F059F5 /* ColorDebugViewExample.app */,
+				FC5FF00A1B6ADF7800F059F5 /* OSX_Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +85,26 @@
 				FC5FF0001B6ADF5300F059F5 /* Info.plist */,
 			);
 			path = ColorDebugViewExample;
+			sourceTree = "<group>";
+		};
+		FC5FF00B1B6ADF7800F059F5 /* OSX_Example */ = {
+			isa = PBXGroup;
+			children = (
+				FC5FF00C1B6ADF7800F059F5 /* AppDelegate.swift */,
+				FC5FF00E1B6ADF7800F059F5 /* ViewController.swift */,
+				FC5FF0101B6ADF7800F059F5 /* Assets.xcassets */,
+				FC5FF0121B6ADF7800F059F5 /* Main.storyboard */,
+				FC5FF0151B6ADF7900F059F5 /* Info.plist */,
+			);
+			path = OSX_Example;
+			sourceTree = "<group>";
+		};
+		FC5FF0191B6ADF8600F059F5 /* ColorDebugView */ = {
+			isa = PBXGroup;
+			children = (
+				FC5FF01A1B6ADFA500F059F5 /* ColorDebugView.swift */,
+			);
+			name = ColorDebugView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +127,23 @@
 			productReference = FC5FEFF11B6ADF5300F059F5 /* ColorDebugViewExample.app */;
 			productType = "com.apple.product-type.application";
 		};
+		FC5FF0091B6ADF7800F059F5 /* OSX_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC5FF0161B6ADF7900F059F5 /* Build configuration list for PBXNativeTarget "OSX_Example" */;
+			buildPhases = (
+				FC5FF0061B6ADF7800F059F5 /* Sources */,
+				FC5FF0071B6ADF7800F059F5 /* Frameworks */,
+				FC5FF0081B6ADF7800F059F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OSX_Example;
+			productName = OSX_Example;
+			productReference = FC5FF00A1B6ADF7800F059F5 /* OSX_Example.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -94,6 +154,9 @@
 				ORGANIZATIONNAME = "Jonathan Hull";
 				TargetAttributes = {
 					FC5FEFF01B6ADF5300F059F5 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					FC5FF0091B6ADF7800F059F5 = {
 						CreatedOnToolsVersion = 7.0;
 					};
 				};
@@ -112,6 +175,7 @@
 			projectRoot = "";
 			targets = (
 				FC5FEFF01B6ADF5300F059F5 /* ColorDebugViewExample */,
+				FC5FF0091B6ADF7800F059F5 /* OSX_Example */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +191,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FC5FF0081B6ADF7800F059F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC5FF0111B6ADF7800F059F5 /* Assets.xcassets in Resources */,
+				FC5FF0141B6ADF7900F059F5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -134,8 +207,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC5FF01B1B6ADFA500F059F5 /* ColorDebugView.swift in Sources */,
 				FC5FEFF71B6ADF5300F059F5 /* ViewController.swift in Sources */,
 				FC5FEFF51B6ADF5300F059F5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC5FF0061B6ADF7800F059F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC5FF01C1B6AE72200F059F5 /* ColorDebugView.swift in Sources */,
+				FC5FF00F1B6ADF7800F059F5 /* ViewController.swift in Sources */,
+				FC5FF00D1B6ADF7800F059F5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +240,14 @@
 				FC5FEFFE1B6ADF5300F059F5 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FC5FF0121B6ADF7800F059F5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC5FF0131B6ADF7800F059F5 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -264,6 +356,36 @@
 			};
 			name = Release;
 		};
+		FC5FF0171B6ADF7900F059F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OSX_Example/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jonhull.OSX-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FC5FF0181B6ADF7900F059F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OSX_Example/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jonhull.OSX-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -281,6 +403,14 @@
 			buildConfigurations = (
 				FC5FF0041B6ADF5300F059F5 /* Debug */,
 				FC5FF0051B6ADF5300F059F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FC5FF0161B6ADF7900F059F5 /* Build configuration list for PBXNativeTarget "OSX_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC5FF0171B6ADF7900F059F5 /* Debug */,
+				FC5FF0181B6ADF7900F059F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

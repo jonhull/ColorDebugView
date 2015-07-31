@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FC5FEFF01B6ADF5300F059F5"
-               BuildableName = "ColorDebugViewExample.app"
-               BlueprintName = "ColorDebugViewExample"
+               BlueprintIdentifier = "FC5FF0091B6ADF7800F059F5"
+               BuildableName = "OSX_Example.app"
+               BlueprintName = "OSX_Example"
                ReferencedContainer = "container:ColorDebugViewExample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FC5FEFF01B6ADF5300F059F5"
-            BuildableName = "ColorDebugViewExample.app"
-            BlueprintName = "ColorDebugViewExample"
+            BlueprintIdentifier = "FC5FF0091B6ADF7800F059F5"
+            BuildableName = "OSX_Example.app"
+            BlueprintName = "OSX_Example"
             ReferencedContainer = "container:ColorDebugViewExample.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -55,9 +55,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FC5FEFF01B6ADF5300F059F5"
-            BuildableName = "ColorDebugViewExample.app"
-            BlueprintName = "ColorDebugViewExample"
+            BlueprintIdentifier = "FC5FF0091B6ADF7800F059F5"
+            BuildableName = "OSX_Example.app"
+            BlueprintName = "OSX_Example"
             ReferencedContainer = "container:ColorDebugViewExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -74,9 +74,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FC5FEFF01B6ADF5300F059F5"
-            BuildableName = "ColorDebugViewExample.app"
-            BlueprintName = "ColorDebugViewExample"
+            BlueprintIdentifier = "FC5FF0091B6ADF7800F059F5"
+            BuildableName = "OSX_Example.app"
+            BlueprintName = "OSX_Example"
             ReferencedContainer = "container:ColorDebugViewExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
