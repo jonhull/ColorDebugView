@@ -19,12 +19,13 @@ Drag a custom view into your storyboard and change it’s class to “ColorDebug
 ## Programmatic Usage
 Use one of the following initialization methods to create a view:
 
-	ColorDebugView(frame: _CGRect_) //Creates a ColorDebugView with a random color and the given frame
+	ColorDebugView(frame: CGRect) //Creates a ColorDebugView with a random color and the given frame
 
-	ColorDebugView(frame: _CGRect_, color: _NS/UIColor_) //Creates a ColorDebugView with the given frame/color
+	ColorDebugView(frame: CGRect, color: NS/UIColor) //Creates a ColorDebugView with the given frame/color
 
-	ColorDebugView(point: _CGPoint_, side: _CGFloat_, color: _NS/UIColor_, isDot: _Bool_) //Creates a ColorDebugView at the given point. 
-The side, color, and isDot parameters are all optional.  By default it will create a dot at the given point with sides of size 64.0 and a random color
+	ColorDebugView(point: CGPoint, side: CGFloat, color: NS/UIColor, isDot: Bool) //Creates a ColorDebugView at the given point. 
+	//NOTE: The side, color, and isDot parameters are all optional.
+	//By default it will create a dot at the given point with sides of size 64.0 and a random color
 
 
 Then add the ColorDebugView to a view which you want it to display in
