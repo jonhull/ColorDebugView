@@ -1,5 +1,6 @@
 # ColorDebugView
 ![alt tag](https://cloud.githubusercontent.com/assets/167242/8999263/a08891cc-36ec-11e5-990a-0a6e4401bfb6.png)
+
 ColorDebugView is a simple NS/UIView which can be used to quickly get a view on the screen when roughing out layouts/animations. It is written in Swift.
 
 **Features:**
@@ -20,11 +21,11 @@ Drag a custom view into your storyboard and change it’s class to “ColorDebug
 ## Programmatic Usage
 Use one of the following initialization methods to create a view (and then add it to the view you want it to display in):
 
-`ColorDebugView(frame: CGRect)` Creates a ColorDebugView with a random color and the given frame
+`ColorDebugView(frame: CGRect)` - Creates a ColorDebugView with a random color and the given frame
 
-`ColorDebugView(frame: CGRect, color: NS/UIColor)` Creates a ColorDebugView with the given frame/color
+`ColorDebugView(frame: CGRect, color: NS/UIColor)` - Creates a ColorDebugView with the given frame/color
 
-`ColorDebugView(point: CGPoint, side: CGFloat, color: NS/UIColor, isDot: Bool)` Creates a ColorDebugView at the given point. The side, color, and isDot parameters are all optional. By default it will create a dot at the given point with sides of size 64.0 and a random color
+`ColorDebugView(point: CGPoint, side: CGFloat, color: NS/UIColor, isDot: Bool)` - Creates a ColorDebugView at the given point. The side, color, and isDot parameters are all optional. By default it will create a dot at the given point with sides of size 64.0 and a random color
 
 ## License
 
