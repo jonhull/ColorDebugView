@@ -20,6 +20,24 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
+    @IBOutlet weak var debugView: ColorDebugView!
+    
+    @IBAction func animateHit(sender: UIButton) {
+        UIView.animateWithDuration(2.0, animations: {
+            self.debugView.transform = CGAffineTransformMakeScale(1.5, 1.5)
+        }, completion: { flag in
+            UIView.animateWithDuration(2.0, animations: {
+                self.debugView.transform = CGAffineTransformMakeRotation(CGFloat(M_PI_2))
+            }, completion: { flag in
+                UIView.animateWithDuration(2.0, animations: {
+                    self.debugView.transform = CGAffineTransformIdentity
+                })
+            })
+        })
+        
+    }
+
 
 }
 

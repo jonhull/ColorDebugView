@@ -23,13 +23,25 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isDot" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vip-L4-Lxg">
+                                <rect key="frame" x="271" y="497" width="57" height="30"/>
+                                <state key="normal" title="Animate"/>
+                                <connections>
+                                    <action selector="animateHit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rpZ-nf-Onq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="pQ5-vc-aNa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B3F-0q-awg"/>
+                            <constraint firstItem="vip-L4-Lxg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M2k-cY-qqU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vip-L4-Lxg" secondAttribute="bottom" constant="73" id="rsi-cV-HmA"/>
                             <constraint firstItem="pQ5-vc-aNa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wMv-Xr-43b"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="debugView" destination="pQ5-vc-aNa" id="NcZ-2p-Cij"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
