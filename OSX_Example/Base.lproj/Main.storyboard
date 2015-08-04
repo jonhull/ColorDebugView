@@ -664,11 +664,11 @@
             </objects>
             <point key="canvasLocation" x="75" y="250"/>
         </scene>
-        <!--View Controller-->
+        <!--View ControllerX-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="OSX_Example" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="m2S-Jp-Qdl">
+                <viewController id="XfG-lQ-9wD" customClass="ViewControllerX" customModule="OSX_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
@@ -678,14 +678,29 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isDot" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </customView>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="UnC-IC-Nlj">
+                                <rect key="frame" x="195" y="13" width="91" height="32"/>
+                                <buttonCell key="cell" type="push" title="Animate" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="BDT-H6-gBN">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="animateHit:" target="XfG-lQ-9wD" id="jmj-cq-LGh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="UnC-IC-Nlj" secondAttribute="bottom" constant="20" id="RgU-tL-Th3"/>
                             <constraint firstItem="mx1-0s-w5b" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="aoC-5g-WRy"/>
                             <constraint firstItem="mx1-0s-w5b" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="105" id="cM2-h8-sEi"/>
                             <constraint firstItem="mx1-0s-w5b" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="epJ-g0-csz"/>
                             <constraint firstItem="mx1-0s-w5b" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="210" id="hVy-JC-GR7"/>
+                            <constraint firstItem="UnC-IC-Nlj" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="lbT-ZS-eoe"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="debugView" destination="mx1-0s-w5b" id="KZ2-jT-lOg"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
