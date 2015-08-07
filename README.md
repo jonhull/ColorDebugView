@@ -28,6 +28,7 @@ Use one of the following initialization methods to create a view (and then add i
 `ColorDebugView(point: CGPoint, side: CGFloat, color: NS/UIColor, isDot: Bool)` - Creates a ColorDebugView at the given point. The side, color, and isDot parameters are all optional. By default it will create a dot at the given point with sides of size 64.0 and a random color
 
 ## License
+The MIT License (MIT)
 
 Copyright (c) 2015 Jon Hull <jhull@gbis.com>
 
